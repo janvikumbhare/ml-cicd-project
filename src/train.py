@@ -12,7 +12,7 @@ def train_model():
 
     model = RandomForestClassifier()
     model.fit(X_train, y_train)
-
+    print("Training started...")
     accuracy = model.score(X_test, y_test)
     print(f"Model Accuracy: {accuracy}")
 
